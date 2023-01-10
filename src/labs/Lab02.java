@@ -54,12 +54,49 @@ public class Lab02 {
 
 	public static void problem3() {
 		
+		Scanner inKey = new Scanner(System.in);
+		
+		System.out.println("\n Enter x1");
+		double x1 = inKey.nextDouble();
+		
+		System.out.println(" Enter y1 ");
+		double y1 = inKey.nextDouble();
+		
+		System.out.println("Enter x2: ");
+		double x2 =  inKey.nextDouble();
+		
+		System.out.println("Enter y2: ");
+		double y2 = inKey.nextDouble();
+		
+		double distance = Math.sqrt(Math.pow((x2-x1), 2) + Math.pow((y2-y1), 2));
+		System.out.println("Distance between points = " + distance);
+		
 		
 	}
 
 	
 	
 	public static void problem4() {
+		
+		Scanner inKey = new Scanner(System.in);
+		
+		System.out.println("\n Enter a-value: ");
+		double a = inKey.nextDouble();
+		
+		System.out.println("Enter a b-value: ");
+		double b = inKey.nextDouble();
+		
+		System.out.println("Enter c-value: ");
+		double c = inKey.nextDouble();
+		
+		double p = (-b+Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
+		System.out.println( "x1 = " + p);
+		double m = (-b-Math.sqrt(Math.pow(b, 2)-4*a*c))/(2*a);
+		System.out.println("x2 = " + m);
+		
+		
+		
+		
 		
 		
 	}
