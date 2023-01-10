@@ -53,17 +53,12 @@ public class Lab01 {
 		System.out.println("Length of side A: ");
 		int sideA = inKey.nextInt();
 		
-		int second = 2;
 		
 		System.out.println("Length of side B: ");	
 		int sideB = inKey.nextInt();
 		
-		
-		
-		int sideAB = sideA + sideB;
-		
-		System.out.println("Hypotenuse = " + Math.pow(sideA, second) + 
-				Math.pow(sideB, second)   );
+		double hypo = Math.sqrt(Math.pow(sideA,  2) + Math.pow(sideB,  2));
+		System.out.println("Hypotenuse = " + hypo);
 		
 		
 	}
@@ -72,8 +67,27 @@ public class Lab01 {
 	
 	public static void problem4() {
 		
+		Scanner inKey = new Scanner(System.in);
 		
+		boolean z = false;
 		
+		int usern = 1;
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		
+		while(usern != 0) {
+			System.out.println("Enter any number : ");
+			usern = inKey.nextInt();
+			
+			max = Math.max(max, usern);
+			min = Math.min(min,  usern);
+			if (usern == 0) {
+				break;
+			}
+		}
+				
+		System.out.println("Max = " + max);
+		System.out.println("Min = " + min);
 		
 		
 	
